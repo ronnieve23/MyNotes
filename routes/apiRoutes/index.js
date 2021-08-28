@@ -35,7 +35,7 @@ function noteValidate(note){
 }
 
 
-router.get('notes', (req,res) => {
+router.get('/notes', (req,res) => {
     return res.json(notes);
 });
 
