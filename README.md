@@ -1,7 +1,8 @@
 # MyNotes ![MIT BADGE](https://img.shields.io/badge/License-MIT-blue.svg)
  
  ## Description
-This Repository contains code for Rutgers Coding Bootcamp's Challenge 11 "Express.js Challenge: Note Taker". 
+This Repository contains refactored code for Rutgers Coding Bootcamp's Challenge 11 "Express.js Challenge: Note Taker". 
+[Click Here to view the original code](https://github.com/coding-boot-camp/miniature-eureka).
 
 For this This week's challenge, we were tasked to create an application called that can be used to write and save notes.
 
