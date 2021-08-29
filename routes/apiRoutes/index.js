@@ -34,9 +34,35 @@ function noteValidate(note) {
 }
 
 
+
+function grabbyID (id, notesArray) {
+    const results = notesArray.filter(note => note.id === id)[0];
+    return results;
+}
+
+
+
+
 router.get('/notes', (req, res) => {
     return res.json(notes);
 });
+
+router.delete('/notes/:id', (req,res) => {
+    const deleteNote = notes.indexOf(grabbyID(req.params.id, notes));
+
+    if (deleteNote > -1){
+        notes.splice(deleteNote, 1);
+
+        fs.writeFileSync(
+            path.join(__dirname, '../../db/db.json'),
+            JSON.stringify({ notes }, null, 2)
+        );
+        return res.json(notes);
+    } else {
+        return res.send(404);
+    }
+});
+
 
 router.post('/notes', (req, res) => {
     if (!noteValidate(req.body)) {
