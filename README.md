@@ -46,7 +46,7 @@ However, if you would wish to configure the code, please do the following:
 
 ## Usage
 1. Click "Get Started" on the website's landing page.
-2. Click on "Note Title" and start giving your note a title/
+2. Click on "Note Title" and start giving your note a title.
 3. Click on "Note Tex" to start typing your note.
 4. Click the Save Icon on the upper right corner to save your note!
 
